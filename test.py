@@ -4,8 +4,8 @@ import pymongo
 app = Flask(__name__)
 
 client = pymongo.MongoClient("mongodb+srv://paaiz:Akusara2020@cluster0.4i3g2d6.mongodb.net/?retryWrites=true&w=majority")
-db = client.akusara
-my_collections = db.sic
+db = client.sicassweek8
+my_collections = db.assweek
 
 @app.route('/')
 def display():
